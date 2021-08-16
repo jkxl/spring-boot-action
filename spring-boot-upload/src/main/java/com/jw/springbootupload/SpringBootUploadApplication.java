@@ -3,6 +3,9 @@ package com.jw.springbootupload;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author jiank
+ */
 @SpringBootApplication
 public class SpringBootUploadApplication {
 
