@@ -20,12 +20,13 @@ import java.util.stream.Collectors;
  * @author: jiankai
  * @create: 2021-08-16 15:40
  **/
-@RestController("/v0.1/api/upload")
+@RequestMapping(("/v0.1/api/upload"))
+@RestController
 public class FileUploadController {
     @Autowired
     FileStorageService fileStorageService;
 
-    @PostMapping("/upload")
+    @PostMapping
     public ResponseEntity<Message> upload(@RequestParam("file") MultipartFile file){
         try {
             fileStorageService.save(file);
